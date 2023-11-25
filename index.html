@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSA Digital Signature</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>RSA Digital Signature</h1>
+    </header>
+
+    <section class="keys-section">
+      <h2>Generated Keys</h2>
+      <div class="keys-container">
+        <label for="p">Enter prime number p:</label>
+        <input type="text" id="p" placeholder="e.g., 61" />
+
+        <label for="q">Enter prime number q:</label>
+        <input type="text" id="q" placeholder="e.g., 53" />
+
+        <label for="e">Enter public exponent e:</label>
+        <input type="text" id="e" placeholder="e.g., 17" />
+
+        <button id="generateKey">Generate Keys</button>
+      </div>
+
+      <div class="key-results">
+        <p>Public Key (n, e): <span id="publicKey"></span></p>
+        <p>Private Key (n, d): <span id="privateKey"></span></p>
+      </div>
+    </section>
+
+    <section class="signature-section">
+      <h2>Sign Message</h2>
+      <label for="messageToSign">Enter message to sign:</label>
+      <input type="text" id="messageToSign" placeholder="e.g., Hello" />
+
+      <button id="sign">Sign</button>
+      <p>Signature: <span id="signatureValue"></span></p>
+    </section>
+
+    <section class="verification-section">
+      <h2>Verify Signature</h2>
+      <label for="messageToVerify">Enter message to verify:</label>
+      <input type="text" id="messageToVerify" placeholder="e.g., Hello" />
+
+      <label for="receivedSignature">Enter received signature:</label>
+      <input type="text" id="receivedSignature" placeholder="Enter signature" />
+
+      <button id="verify">Verify</button>
+      <p>Verification Result: <span id="verificationResult"></span></p>
+    </section>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

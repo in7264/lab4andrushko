@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  header h1, h2 {
+    color: #333;
+  }
+  
+  .keys-section, .signature-section, .verification-section {
+    margin-bottom: 20px;
+  }
+  
+  .keys-container, .key-results {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 8px;
+    background-color: #4ca0af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+  
